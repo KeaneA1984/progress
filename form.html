@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Accessible HTML Forms</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#main-content" class="skip-link"  tabindex="1">Skip to Main Content</a>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="playground.html">A11y Playground<a></li>
+                <li><a href="contact.html"> Contant Form</a></li>
+            </ul>
+        </nav>
+    </header>    
+    
+    <main id="main-content">
+        <h1>Accessible HTML Forms</h1>
+        <p>This is a page to talk about how to make accessible forms in HTML.</p>
+
+        <h2>Form using Text input element</h2>
+    
+        <form>
+        
+        <label for="fname">First name:</label><br>
+        <input type="text" id="frname" name="fname"><br>
+        <label for="lname">Last name:</label> <br>
+        <input type="text" id="lname" name="lname"><br>
+    
+        </form>
+    
+        <h2> Form for using Radio input element</h2>
+        <form>
+    
+            <input type="radio" id="html" name="fav_language">
+            <label for="html">HTML</label><br>
+    
+            <input type="radio" id="CSS" name="fav_language">
+            <label for="css">CSS</label><br>
+    
+            <input type="radio" id="javascript" name="fav_language">
+            <label for="javascript">Javascript</label><br>
+        </form>
+    
+        <h2>Form using Text input element with Submit</h2>
+    
+        <form action="/action_page.php">
+    
+            <label for="fname">First name:</label><br>
+            <input type="text" id="frname" name="fname"><br>
+            <label for="lname">Last name:</label> <br>
+            <input type="text" id="lname" name="lname"><br>
+            <input type="submit" value="submit">
+    
+        </form>
+    
+        <h2>The datalist tag</h2>
+    
+    <p>The datalist element specifies a list of pre-defined options for an input element.</p>
+    
+        <form action="/action_page.php">
+            <input list="browsers" name="browser">
+            <datalist id="browsers">
+            <option value="Internet Explorer">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist>
+        <input type="submit">
+    </form>
+
+    </main>
+</body>
+</html>
